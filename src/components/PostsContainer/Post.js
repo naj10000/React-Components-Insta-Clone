@@ -11,6 +11,7 @@ import "./Posts.css";
 const Post = props => {
   // set up state for the likes
   const [likes, setLikes] = useState(props.post.likes);
+  console.log(props.post)
   const increaseLikes = () => {
     setLikes(likes => likes + 1)
   }
